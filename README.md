@@ -17,7 +17,7 @@ Modern Roblox UI Library
 ## Usage
 
 local ZeroUI = loadstring(game:HttpGet(
-"https://raw.githubusercontent.com/KangDark/ZeroUI/main/source.lua"
+"https://raw.githubusercontent.com/kangdark/ZeroUI/main/source.lua"
 ))()
 
 local Window = ZeroUI:CreateWindow({
