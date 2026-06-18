@@ -3,6 +3,8 @@
     Author: KangDark
 ]]
 
+local Drag =
+require(script.Parent.Drag)
 local Renderer = require(script.Parent.Renderer)
 local ToggleRenderer = require(script.Parent.ToggleRenderer)
 local ButtonRenderer = require(script.Parent.ButtonRenderer)
@@ -28,9 +30,13 @@ function Window.new(Config)
         UI.DropdownButton
     )
 
-    Self.UI = UI
+    Drag:Enable(
+    UI.Header
+)
 
-    return Self
+Self.UI = UI
+
+return Self
 end
 
 function Window:CreateToggle(Config)
